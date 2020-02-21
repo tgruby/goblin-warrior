@@ -3,6 +3,7 @@ import random
 import os
 import ascii_art
 
+
 # This is our first 'function'.  Functions can be called from any other point in our code, which makes them very
 # reusable. Using functions often simplifies our code. This function check which type of computer we are on and calls
 # the correct clear screen command.
@@ -49,8 +50,8 @@ quit_msg_2 = "  The villagers homes are destroyed and they are forced to move ou
 slain_msg = "  You are slain! The goblins run over your body and rush into the town, burning and destroying everything!"
 village_burned_msg = "  The goblins have burnt down the entire village! The villagers are forced to move out as the " \
                      "goblins take over the town! You failed!!! "
-victory_msg_1 = "  You defeated all the goblins! The villagers carry you on their backs and proclaim you their king of " \
-                "the land! "
+victory_msg_1 = "  You defeated all the goblins! The villagers carry you on their backs and proclaim you their " \
+                "king of the land! "
 victory_msg_2 = "  You are given free reign and a castle! Congratulations, Goblin Warrior!"
 
 clear_screen()
@@ -62,7 +63,7 @@ print(goblin_count_msg_1 + str(goblin_count) + goblin_count_msg_2)
 print(hut_count_msg_1 + str(hut_count) + hut_count_msg_2)
 while health_stat > 0 and goblin_count > 0 and hut_count > 0:
     print("")
-    nextMove = raw_input(your_move_msg)
+    nextMove = input(your_move_msg)
     clear_screen()
     # Attacking kills goblins, but you also take damage
     if nextMove == "A" or nextMove == "a":
